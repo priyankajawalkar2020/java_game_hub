@@ -1,0 +1,31 @@
+import javax.swing.*;
+import java.awt.event.*;
+public class menu
+{
+	private JFrame m1=new JFrame("Menu");
+	private JButton bnew=new JButton("New Game");
+	private JButton bquit=new JButton("Quit");
+	private JButton bsc=new JButton("Scores");
+	public menu()
+	{
+		m1.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+		m1.getContentPane().add(bnew);
+		bnew.addActionListener(new ActionListener(){
+		public void actionPerformed(ActionEvent e)
+		{
+			m1.dispose();
+			new snake();
+		}
+		});
+		m1.setSize(200,200);
+		m1.setVisible(true);
+		m1.add(bquit);
+		m1.add(bsc);
+	}
+
+public static void main(String args[])
+{
+new menu();
+}
+}
+

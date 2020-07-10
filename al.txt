@@ -1,0 +1,30 @@
+class nal implements ActionListener
+	{	
+		public void actionPerformed(ActionEvent e)
+		{
+			m.dispose();
+			new Snake();
+		}
+	}
+	class sal implements ActionListener
+	{	
+		public void actionPerformed(ActionEvent e)
+		{
+			m.dispose();
+			new Snake();
+		}
+	}
+	class qal implements ActionListener
+	{	
+		public void actionPerformed(ActionEvent e)
+		{
+			m.dispose();
+			new Snake();
+		}
+	}
+	ActionListener l1=new nal();
+	bn.addActionListener(l1);
+	ActionListener l2=new sal();
+	bs.addActionListener(l2);
+	ActionListener l3=new qal();
+	bq.addActionListener(l3);
